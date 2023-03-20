@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link href="./CSS/header.css" rel="stylesheet" type="text/css" />
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Cormorant+Unicase:wght@700&family=Fira+Sans:wght@300;400;500;600;700&family=Noto+Serif+TC:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <title>Header</title>
+
+    <script src="/WarmTouch/JS/jQuery.js" type="text/javascript" charset="utf-8"></script>
+    
+
+</head>
+
+
+
+<body>
+    <div id="header">
+        
+        <a href="./index.html"><img src="./IMG/logo/Logo black.svg" class="logo_img" /></a>
+        <div class="hamburger-menu">
+            <span></span>
+            <span></span>
+        </div>
+        
+
+    </div>
+
+    
+    <nav class="navbar-dropdown-bg">
+
+        <ul class="navbar-dropdown">
+            <li>
+                <div>
+                    <a href="workshop.html">工作坊</a>                    
+                    <ul>
+                        <li><a href="workshop.html">課程報名</a></li>
+                        <li><a href="workshop.html">常見問題</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li>
+                <div>
+                    <a href="coorperate.html">合作方案</a>
+                    <ul>
+                        <li><a href="coorperate.html">皮件客製化</a></li>
+                        <li><a href="coorperate.html">團體課程教學</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li>
+                <div>
+                    <a href="product.html">產品</a>                
+                    <ul>
+                        <li><a href="product1.html">皮革包</a></li>
+                        <li><a href="product1.html">皮夾</a></li>                    
+                        <li><a href="product1.html">配件</a></li>                        
+                        <li><a href="product1.html">客製化</a></li>                        
+                    </ul>
+                </div>
+            </li>
+
+            <li>
+                <div>
+                    <a href="blog.html">文章</a>                    
+                    <ul>
+                        <li><a href="artical.html">最新消息</a></li>                        
+                        <li><a href="artical.html">精選文章</a></li>                        
+                        <li><a href="artical.html">基礎入門</a></li>                        
+                        <li><a href="artical.html">職人訪談</a></li>                        
+                    </ul>
+                </div>
+            </li>
+
+            <li>
+                <div>
+                    <a href="contact.html">聯絡我們</a>                    
+                    <ul>
+                        <li><a href="contact.html">工作室</a></li>
+                        <li><a href="contact.html">交通方式</a></li>
+                        <li><a href="contact.html">聯絡我們</a></li>
+                    </ul>
+                </div>
+            </li>
+
+        </ul>
+    </nav>
+
+    <div class="clearfix"></div>
+
+    <script>
+
+
+        $(document).ready(function () {
+            $(function () {
+
+                
+
+                //控制導覽列淡出後才塞css樣式，避免淡出動畫無法呈現的問題
+                var navbar_dropdown_bg = document.querySelector(".navbar-dropdown-bg");
+                navbar_dropdown_bg.addEventListener("webkitAnimationEnd", function () {
+                    if (!$(".hamburger-menu").hasClass("active")) {
+                        $(".navbar-dropdown-bg").css("display", "none");
+                    }
+                })
+            });
+
+            $(".hamburger-menu").click(function () {
+                if (!$(".hamburger-menu").hasClass("active")) {
+                    $(".navbar-dropdown-bg").addClass("fade_in");
+                    $(".navbar-dropdown-bg").removeClass("fade_out");
+                    $(".navbar-dropdown-bg").css("display", "flex");
+                } else {
+                    $(".navbar-dropdown-bg").addClass("fade_out");
+                    $(".navbar-dropdown-bg").removeClass("fade_in");
+
+                }
+            })
+
+        });
+
+        //控制漢堡選單點下的動作
+        $(function () {
+            $(".hamburger-menu").on("click", function () {
+                $(this).toggleClass("active");
+            })
+        })
+    </script>
+
+</body>
+
+</html>

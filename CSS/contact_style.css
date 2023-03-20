@@ -1,0 +1,243 @@
+@import url(default.css);
+
+body{
+    font-family: 'Noto Serif TC','Cormorant Garamond', 'Cormorant Unicase', 'Fira Sans' ;
+    font-weight: 400px;
+    color: #000000;
+}
+
+.wrapper{
+    height: 3430px;
+}
+
+.headerPage{
+    position: sticky;
+    top: 0px; 
+    z-index: 1;
+    
+}
+
+/* --------------------------------- First ------------------------ */
+.studio_bg {
+    height: 1200px;
+    width: 100%;
+    background-color: rgba(55, 63, 39, 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.studio_title {
+    width: 470px;
+    color: #CDA34F;
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+    top: 104px;
+    font-size: 48px;
+    text-shadow: 0em 4px 4px rgba(0, 0, 0, 0.25);
+    -webkit-text-stroke: 1px #E1CE7A;
+    
+}        
+
+.studio_border {
+    height: 1000px;
+    width: 1150px;
+    border: 5px solid #D9D9D9;
+    background-image: linear-gradient(to right, #D9D9D9 50%, transparent 50%);
+    background-size: 760px 5px;
+    background-repeat: repeat-x;
+    border-top: none;
+
+    
+}
+
+.swiper-slide {
+    /* display: -webkit-flex; */
+    display: flex;
+    /* -webkit-justify-content: center; */
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.swiper-wrapper{
+    position: unset;
+}
+
+.gallery-top {
+    height: 80%;
+    width: 100%;
+    
+}
+
+.gallery-thumbs {
+    /* height: 175px; */
+    box-sizing: border-box;
+    padding: 5px 0;
+    margin-left: 70px;
+    transition-duration: 0ms;
+    margin-top: -60px; 
+    
+}
+
+.gallery-thumbs .swiper-slide {
+    width: 192px !important;
+    height: 175px !important;
+    
+    opacity: 0.4;
+}
+
+.gallery-thumbs img {
+    width: 100%
+}
+
+.gallery-thumbs .swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+.gallery-top img {
+    width: 1000px;
+    height: 670px;
+}
+
+/* ---------------------------------- Second ------------------------------------- */
+
+.traffic{
+    height: 1300px;
+    background-color: #E9E7DA;
+    text-align: center;
+}
+
+.traffic_title{
+    padding-top: 92px;
+    font-size: 48px;
+    color: #373F27;
+}
+
+.map{
+    padding-top: 92px;
+}
+
+.traffic_contain{
+    width: 1280px;
+    display: inline-grid;
+    justify-content: center; 
+    margin-top: 80px;
+}
+
+.traffic_table{
+    width: 1050px; 
+    text-align: left; 
+    table-layout:fixed; 
+    line-height: 40px;
+
+    
+}
+
+table {
+    color: #000000;
+    /* font-family: 'Noto Serif TC'; */
+    line-height: 25px;
+    font-size: 20px;
+    
+}
+
+table tr {
+    height: 70px;
+
+}
+
+.traffic_info_title {
+    font-size: 24px;
+    /* font-weight: bold; */
+}
+
+.traffic_info{
+    font-weight: 400px;
+}
+
+.icon_image {
+    position: relative;
+    top: 3px;
+}
+
+/* ----------------------------- Third --------------------------------------*/
+
+.contactUs{
+    height: 860px; 
+    background-color: rgba(55, 63, 39, 0.5);
+    text-align: center;
+    padding-top: 100px;
+}
+
+.contactUs_title{
+    font-size: 48px;
+    color: #541412;
+    font-family: 'Cormorant Unicase';
+    
+}
+
+.contactUs_table{
+    display: flex; 
+    justify-content: center;
+}
+
+.table_range{
+    width: 900px; 
+    height: 460px;
+    margin-top: 50px;
+}
+
+.name_range{
+    text-align: left;
+}
+
+.title_style{
+    font-size: 28px;
+    color: #541412; 
+    font-family: 'Cormorant Garamond';
+}
+
+.other_range{
+    text-align: left; 
+    padding-top: 36px;
+}
+
+.input{
+    width: 300px;
+    height: 50px;
+    border-bottom: 2px solid #541412;
+    border-radius: unset;
+}
+
+.textarea_input{
+    resize: none;
+    width: 900px;
+    height: 150px;
+    border-bottom: 2px solid #541412;
+    border-radius: unset; 
+    /* overflow:hidden; */
+}
+
+.submit{
+    display: flex; 
+    justify-content: center; 
+    padding-top: 54px;
+}
+
+.submit_button{
+    background-color: #541412; 
+    height: 65px; 
+    width: 260px; 
+    color: rgba(233, 231, 218, 1); 
+    font-size: 24px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+    

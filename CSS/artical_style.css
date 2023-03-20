@@ -1,0 +1,241 @@
+@import url(default.css);
+
+.body{
+    font-family: 'Noto Serif TC','Cormorant Garamond', 'Cormorant Unicase', 'Fira Sans' ;
+     
+    
+}
+
+.wrapper{
+    height: 4000px;
+    background-color: #E9E7DA;
+
+    font-size: 20px;
+    line-height: 200%;
+    color: #000;
+}
+
+.header_red_Page{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/* --------------------------- Artical first ---------------------------- */
+
+.index_list{
+    height: 35px;
+    background-color: rgba(55, 63, 39, .5);
+    color: #E9E7DA;
+}
+
+.index_range{
+    padding-left: 90px;
+    line-height: 35px;
+}
+
+.sort_time{
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 200px;
+}
+
+.sort_time h3{
+    font-size: 32px;
+}
+
+.sort_time span{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.artical_title{
+    width: 800px;
+    height: 160px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid #000;
+
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.artical_title h1{
+    text-align: center;
+    font-size: 40px;
+    padding: 35px;
+}
+
+.artical_title span{
+    display: block;
+    font-size: 24px;
+    text-align: center;
+
+    /* outline: 1px solid red; */
+}
+
+.arti_first_block{
+    width: 1040px;
+    height: 640px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 80px;
+}
+
+.arti_first_block img{
+    width: 430px;
+    height: 640px;
+    display: block;
+}
+
+.arti_first_block ul{
+    height: 580px;
+    margin: auto 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: justify;
+}
+
+.arti_first_block li{
+    width: 530px;
+    font-weight: normal;
+    text-indent: 2em;
+}
+
+.arti_second_block{
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 150px;
+    font-weight: normal;
+    text-indent: 2em;
+    text-align: justify;
+}
+
+.arti_third_block{
+    width: 1120px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 150px;
+    /* outline: 1px solid red; */
+}
+
+.arti_third_block .img1{
+    width: 524px;
+    height: 367px;
+    
+    display: block;
+    position: relative;
+    bottom: 40px;
+    
+}
+
+.arti_third_block .img2{
+    width: 524px;
+    height: 367px;
+    
+    display: block;
+    position: relative;
+    top: 40px;
+    
+}
+
+.arti_fourth_block{
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 150px;
+    font-weight: normal;
+    text-indent: 2em;
+    text-align: justify;
+
+}
+
+.arti_fifth_block{
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 80px;
+    text-align: center;
+    /* outline: 1px solid red; */
+    font-size: 32px;
+    line-height: 200%;
+
+}
+
+.arti_sixth_block{
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 80px;
+    font-weight: normal;
+    text-indent: 2em;
+    text-align: justify;
+
+}
+
+.arti_line{
+    background-color: black;
+    width: 800px;
+    height: 2px;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+.arti_bottom_title{
+    font-size: 32px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.arti_seven_block{
+    width: 920px;
+    margin: 0 auto;
+    
+    /* outline: 1px solid red; */
+}
+
+.seven_img1{
+    background-image: url(../IMG/artical/artical\ 1-4.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 410px;
+    height: 300px;
+}
+
+.seven_img2{
+    background-image: url(../IMG/artical/artical\ 1-5.jpg);
+    background-size: cover;
+    background-position: center center;
+    width: 410px;
+    height: 300px;
+}
+
+.arti_seven_block ul{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.title_time{
+    width: 410px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.title_time h6{
+    font-size: 24px;
+}
+.title_time span{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.seven_p p{
+    width: 410px;
+    font-weight: normal;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
